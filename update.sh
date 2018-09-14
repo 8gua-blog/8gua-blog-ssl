@@ -5,7 +5,7 @@ cd $PREFIX
 
 source ~/.bashrc
 
-source $PREFIX/private/dnspod_config.sh
+source $PREFIX/ssl_config/dns.sh
 
 ~/.acme.sh/acme.sh --renew -d $HOST --force --log
 

@@ -3,7 +3,7 @@
 PREFIX=$(cd "$(dirname "$0")"; pwd)
 cd $PREFIX
 
-source private/dnspod_config.sh
+source ssl_config/dns.sh
 
  ~/.acme.sh/acme.sh --issue --dns dns_dp -d $HOST  -d www.$HOST --force
 
