@@ -5,7 +5,7 @@ cd $PREFIX
 
 source ssl_config/dns.sh
 
- ~/.acme.sh/acme.sh --issue --dns dns_dp -d $HOST  -d www.$HOST --force
+ ~/.acme.sh/acme.sh --issue --dns dns_dp -d $HOST  -d *.$HOST --force
 
 
 

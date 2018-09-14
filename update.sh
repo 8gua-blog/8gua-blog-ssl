@@ -7,7 +7,7 @@ source ~/.bashrc
 
 source $PREFIX/ssl_config/dns.sh
 
-~/.acme.sh/acme.sh --renew -d $HOST --force --log
+~/.acme.sh/acme.sh --renew -d $HOST -d *.$HOST --force --log
 
 sync() {
     git add -u && git commit -m 'UPDATE HTTPS CERTIFICATE' ;
